@@ -1,0 +1,4 @@
+{
+  "extends": ["@parcel/config-default"],
+  "reporters":  ["...", "parcel-reporter-clean-dist"] // "..." is needed to include all other pipelines
+}

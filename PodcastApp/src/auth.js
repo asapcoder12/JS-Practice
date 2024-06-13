@@ -17,7 +17,7 @@ export function getAuthForm(params) {
 }
 
 export function authWithEmailAndPassword(email, password) {
-    const apiKey = "AIzaSyAFgbazgE6HeOFTyfzZW7TMIf1fn7YrNnc";
+    const apiKey = "";
     return fetch(`https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${apiKey}`, {
         method: "POST",
         body: JSON.stringify({

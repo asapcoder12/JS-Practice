@@ -1,0 +1,85 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.app {
+  justify-content: center;
+  padding-top: 5rem;
+  display: flex;
+}
+
+.wrap {
+  width: 500px;
+}
+
+.select {
+  z-index: 100;
+  width: 100%;
+  position: relative;
+}
+
+.select.open .select__dropdown {
+  display: block;
+}
+
+.select.open .select__input {
+  border-bottom: none;
+}
+
+.select.open .select__backdrop {
+  display: block;
+}
+
+.select__input {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+  height: 46px;
+  padding: 0 1rem;
+  display: flex;
+}
+
+.select__dropdown {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-height: 200px;
+  display: none;
+  position: absolute;
+  top: 46px;
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+  box-shadow: 2px 3px 5px #0000004d;
+}
+
+.select__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.select__backdrop {
+  z-index: -1;
+  display: none;
+  position: fixed;
+  inset: 0;
+}
+
+.select__item {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.select__item.selected {
+  background-color: bisque;
+}
+
+.select__item:hover {
+  cursor: pointer;
+  background-color: #eee;
+  transition: background-color .15s ease-in;
+}
+/*# sourceMappingURL=index.c41b5a0e.css.map */
